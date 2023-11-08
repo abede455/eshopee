@@ -1,0 +1,25 @@
+
+	<div class="left-sidebar">
+		<h2>Category</h2>
+		<div class="panel-group category-products" id="accordian">
+			<!--category-productsr-->
+			
+			
+			<div class="panel panel-default" th:each="cate: ${categories}">
+				<div class="panel-heading">
+					<h4 class="panel-title"><a th:href="@{/product/bycategory/{id}(id=${cate.cateId})}">
+					<span th:text="${cate.name}"></span></a></h4>
+				</div>
+			</div>
+
+		<!--/category-products-->
+
+		
+
+		<div class="shipping text-center">
+			<!--shipping-->
+			<img th:src="@{/eshop/images/home/shipping.jpg}" alt="">
+		</div>
+		<!--/shipping-->
+
+	</div>

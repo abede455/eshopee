@@ -1,0 +1,22 @@
+<th:block xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+          layout:fragment="end">
+          
+ <!-- Jquery -->
+    <script th:src="@{/eshop/js/jquery.min.js}"></script>
+
+	<script th:src="@{/eshop/js/jquery.scrollUp.min.js}"></script>
+
+	<!-- Bootstrap JS -->
+	<script th:src="@{/eshop/js/bootstrap.min.js}"></script>
+
+	<script th:src="@{/eshop/js/price-range.js}"></script>
+	<script th:src="@{/eshop/js/jquery.prettyPhoto.js}"></script>
+	<script th:src="@{/eshop/js/main.js}"></script>
+	<script th:src="@{/eshop/js/moment-with-locales.js}"></script>
+
+	<th:block layout:fragment="cart-js"></th:block>
+		<th:block layout:fragment="checkout-js"></th:block>
+
+	<th:block layout:fragment="receipt-js"></th:block>
+	
+</th:block>

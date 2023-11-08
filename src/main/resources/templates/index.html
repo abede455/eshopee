@@ -1,0 +1,27 @@
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  xmlns:with="http://www.thymeleaf.org/extras/with"
+  layout:decorate="~{layout}"
+  with:title="eshopee"
+>
+<th:block layout:fragment="content">
+    <h1>Welcome to Bootcamp <span th:text="${title}"></span></h1>
+    <img th:src="@{/img/marley.png}" />
+    <div>
+      <table>
+        <thead>
+          <td>No</td>
+          <td>Programming Language</td>
+        </thead>
+        <tbody>
+          <tr th:each="pl,nomorBaris : ${pl}">
+            <td th:text="${nomorBaris.count}"></td>
+            <td th:text="${pl}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</th:block>
+
